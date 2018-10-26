@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		795B8033218351FB0097653D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795B8032218351FB0097653D /* AppDelegate.swift */; };
-		795B8035218351FB0097653D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795B8034218351FB0097653D /* ViewController.swift */; };
 		795B8038218351FB0097653D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795B8036218351FB0097653D /* Main.storyboard */; };
 		795B803A218351FC0097653D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795B8039218351FC0097653D /* Assets.xcassets */; };
 		795B803D218351FC0097653D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795B803B218351FC0097653D /* LaunchScreen.storyboard */; };
 		795B8048218351FC0097653D /* Conversion_Calculator_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795B8047218351FC0097653D /* Conversion_Calculator_UITests.swift */; };
 		795B8053218351FC0097653D /* Conversion_Calculator_UIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795B8052218351FC0097653D /* Conversion_Calculator_UIUITests.swift */; };
+		795B8061218352400097653D /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795B8060218352400097653D /* ConverterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		795B802F218351FB0097653D /* Conversion Calculator UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conversion Calculator UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		795B8032218351FB0097653D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		795B8034218351FB0097653D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		795B8037218351FB0097653D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		795B8039218351FC0097653D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		795B803C218351FC0097653D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		795B804E218351FC0097653D /* Conversion Calculator UIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Conversion Calculator UIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		795B8052218351FC0097653D /* Conversion_Calculator_UIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversion_Calculator_UIUITests.swift; sourceTree = "<group>"; };
 		795B8054218351FC0097653D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		795B8060218352400097653D /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				795B8032218351FB0097653D /* AppDelegate.swift */,
-				795B8034218351FB0097653D /* ViewController.swift */,
 				795B8036218351FB0097653D /* Main.storyboard */,
+				795B8060218352400097653D /* ConverterViewController.swift */,
 				795B8039218351FC0097653D /* Assets.xcassets */,
 				795B803B218351FC0097653D /* LaunchScreen.storyboard */,
 				795B803E218351FC0097653D /* Info.plist */,
@@ -256,8 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				795B8035218351FB0097653D /* ViewController.swift in Sources */,
 				795B8033218351FB0097653D /* AppDelegate.swift in Sources */,
+				795B8061218352400097653D /* ConverterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
