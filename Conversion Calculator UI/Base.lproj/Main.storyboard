@@ -23,9 +23,19 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXq-1x-Qc1">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="°C" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J0B-gs-1W4">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J0B-gs-1W4">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="91.5"/>
                                                 <color key="backgroundColor" red="0.86274509799999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="°C" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gxl-WD-aVS">
+                                                <rect key="frame" x="300" y="0.0" width="75" height="91.5"/>
+                                                <color key="backgroundColor" red="0.86274509799999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="3zF-y0-MnS"/>
+                                                </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -35,9 +45,19 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20i-2v-hw6">
                                         <rect key="frame" x="0.0" y="92.5" width="375" height="91.5"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="°F" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XKe-VQ-MMN">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XKe-VQ-MMN">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="91.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="°F" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X4y-Un-HOI">
+                                                <rect key="frame" x="300" y="0.0" width="75" height="91.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="wE9-Tm-mU2"/>
+                                                </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="40"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -54,6 +74,9 @@
                                                 <state key="normal" title="C">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="ClearClicked:" destination="Ird-e3-LRv" eventType="touchUpInside" id="nxX-fz-w2j"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCa-WP-F27">
                                                 <rect key="frame" x="125.5" y="0.0" width="124" height="91.5"/>
@@ -62,6 +85,9 @@
                                                 <state key="normal" title="+/-">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="SignChange:" destination="Ird-e3-LRv" eventType="touchUpInside" id="4Q0-Zw-FOh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJo-GP-kBM">
                                                 <rect key="frame" x="250.5" y="0.0" width="124.5" height="91.5"/>
@@ -90,6 +116,9 @@
                                                 <state key="normal" title="7">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="NumberClicked:" destination="Ird-e3-LRv" eventType="touchUpInside" id="Hyk-VG-5Wz"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOU-dc-Lvm">
                                                 <rect key="frame" x="125.5" y="0.0" width="124" height="92"/>
@@ -98,6 +127,9 @@
                                                 <state key="normal" title="8">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="NumberClicked:" destination="Ird-e3-LRv" eventType="touchUpInside" id="34u-JD-lyh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30x-9i-zXy">
                                                 <rect key="frame" x="250.5" y="0.0" width="124.5" height="92"/>
@@ -106,6 +138,9 @@
                                                 <state key="normal" title="9">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="NumberClicked:" destination="Ird-e3-LRv" eventType="touchUpInside" id="gU4-sh-yW7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -123,6 +158,9 @@
                                                 <state key="normal" title="4">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="NumberClicked:" destination="Ird-e3-LRv" eventType="touchUpInside" id="nu4-r8-QAA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vO8-wf-6Nj">
                                                 <rect key="frame" x="125.5" y="0.0" width="124" height="91.5"/>
@@ -131,6 +169,9 @@
                                                 <state key="normal" title="5">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="NumberClicked:" destination="Ird-e3-LRv" eventType="touchUpInside" id="Q0O-oL-cVX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYw-fz-b4N">
                                                 <rect key="frame" x="250.5" y="0.0" width="124.5" height="91.5"/>
@@ -139,6 +180,9 @@
                                                 <state key="normal" title="6">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="NumberClicked:" destination="Ird-e3-LRv" eventType="touchUpInside" id="AIK-oe-qG1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -156,6 +200,9 @@
                                                 <state key="normal" title="1">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="NumberClicked:" destination="Ird-e3-LRv" eventType="touchUpInside" id="8Gg-e2-RO6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQf-i8-2Lj">
                                                 <rect key="frame" x="125.5" y="0.0" width="124" height="91.5"/>
@@ -164,6 +211,9 @@
                                                 <state key="normal" title="2">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="NumberClicked:" destination="Ird-e3-LRv" eventType="touchUpInside" id="l3l-Dd-eD0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAW-qm-9IS">
                                                 <rect key="frame" x="250.5" y="0.0" width="124.5" height="91.5"/>
@@ -172,6 +222,9 @@
                                                 <state key="normal" title="3">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="NumberClicked:" destination="Ird-e3-LRv" eventType="touchUpInside" id="YHT-h0-f3j"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -189,6 +242,9 @@
                                                 <state key="normal" title="0">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="NumberClicked:" destination="Ird-e3-LRv" eventType="touchUpInside" id="P14-Rs-tUx"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MF9-rX-gh2">
                                                 <rect key="frame" x="250.5" y="0.0" width="124.5" height="91.5"/>
@@ -197,6 +253,9 @@
                                                 <state key="normal" title=".">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="NumberClicked:" destination="Ird-e3-LRv" eventType="touchUpInside" id="kfx-qr-8OZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -224,6 +283,8 @@
                         <viewLayoutGuide key="safeArea" id="wt5-TK-gwj"/>
                     </view>
                     <connections>
+                        <outlet property="InputSign" destination="X4y-Un-HOI" id="OF9-g4-S3y"/>
+                        <outlet property="OutputSign" destination="gxl-WD-aVS" id="iIs-UH-jD2"/>
                         <outlet property="inputDisplay" destination="XKe-VQ-MMN" id="Yjr-6n-0Ko"/>
                         <outlet property="outputDisplay" destination="J0B-gs-1W4" id="e58-9q-aRq"/>
                     </connections>
